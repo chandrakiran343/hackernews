@@ -4,6 +4,7 @@ import CreateLink from './CreateLink';
 import Header from './Header';
 import {Route, Routes } from 'react-router-dom';
 import Login from './Login'
+import Search from './Search';
 function App() {
   return (
     <div className="center w85">
@@ -16,6 +17,7 @@ function App() {
             element={<CreateLink />}
           />
           <Route path='/login' element={<Login />} />
+          <Route path="/search"element={<Search/>}/>
         </Routes>
       </div>
     </div>
